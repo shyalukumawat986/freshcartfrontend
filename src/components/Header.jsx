@@ -74,17 +74,17 @@ function Header() {
           {/* ✅ Icons */}
           <div className="flex items-center gap-4">
             {/* Wishlist */}
-            <a href="/Wishlist">
+            <Link to="/Wishlist">
             <div className="relative text-gray-700 cursor-pointer hover:text-[#0AAD0A]">
               <FaHeart className="text-lg" />
               <span className="absolute -top-2 -right-2 bg-[#0AAD0A] text-white rounded-full text-xs px-1">
                 {numwishlist}
               </span>
-            </div></a>
+            </div></Link>
 
             {/* User */}
             <div className="text-gray-700 hover:text-[#0AAD0A] cursor-pointer" >
-              <a href="/Signup"><FaUser className="text-lg " /></a>
+              <Link to="/Signup"><FaUser className="text-lg " /></Link>
                 
 
             </div>
@@ -92,7 +92,7 @@ function Header() {
     
            
             <div className="relative text-gray-700 cursor-pointer hover:text-[#0AAD0A]">
-             <a href="/cartslider"><FaBagShopping className="text-lg"  /></a> 
+             <Link to="/cartslider"><FaBagShopping className="text-lg"  /></Link> 
    
               <span className="absolute -top-2 -right-2 bg-[#0AAD0A] text-white rounded-full text-xs px-1">
                 5 
