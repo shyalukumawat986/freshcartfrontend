@@ -95,7 +95,7 @@ export default function Footer() {
           </div>
 
           {/* App Badges */}
-          <div className="flex items-center gap-4 justify-center">
+          <div className="flex items-center gap-4 justify-center max-w-7xl mx-auto px-6 py-4 ">
             <span className="text-gray-900 font-medium">Get deliveries with FreshCart</span>
             <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
