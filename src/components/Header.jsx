@@ -6,6 +6,7 @@ import {
   FaMagnifyingGlass,
   FaLocationDot,
 } from "react-icons/fa6";
+import { Link, useNavigate } from "react-router-dom";
 
   
 
