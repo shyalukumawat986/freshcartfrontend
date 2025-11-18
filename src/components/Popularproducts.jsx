@@ -18,7 +18,7 @@ function Popularproducts() {
   },[])
 
   let ourproduct=()=>{
-    axios.get("http://localhost:5000/popularproducts").then((res)=>{
+    axios.get("https://freshcartbackend-lemon.vercel.app/popularproducts").then((res)=>{
       if(res.data.status){
         setproducts(res.data.popularproducts)
       }

@@ -18,7 +18,7 @@ function Wishlist() {
   },[])
 
   let ourwishlist=()=>{
-    axios.get("http://localhost:5000/wishlist").then((res)=>{
+    axios.get("https://freshcartbackend-lemon.vercel.app/wishlist").then((res)=>{
       if(res.data.status){
         setwishlist(res.data.wishlist)
       }
@@ -29,7 +29,7 @@ function Wishlist() {
 
   // removeitem 
   let removeitem=(item)=>{
-    axios.post("http://localhost:5000/removewishlistitem",{item})
+    axios.post("https://freshcartbackend-lemon.vercel.app/removewishlistitem",{item})
 
     window.location.reload()
   }

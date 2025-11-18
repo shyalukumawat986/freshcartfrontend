@@ -21,7 +21,7 @@ function Signup() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/signup", signup);
+      const res = await axios.post("https://freshcartbackend-lemon.vercel.app/signup", signup);
 
       if (res.data.status) { // ✅ updated key name
         alert("Signup successful!");

@@ -105,7 +105,7 @@ export default function Productdetail() {
 
 
   let wishlist=(wishlistitem)=>{
-    axios.post("http://localhost:5000/wishlistitem",{wishlistitem})
+    axios.post("https://freshcartbackend-lemon.vercel.app/wishlistitem",{wishlistitem})
   }
 
   return (
