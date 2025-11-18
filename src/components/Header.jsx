@@ -6,9 +6,15 @@ import {
   FaMagnifyingGlass,
   FaLocationDot,
 } from "react-icons/fa6";
-import { BrowserRouter, Link } from "react-router-dom";
+
+  
+
 
 function Header() {
+
+  
+
+    let numwishlist=localStorage.getItem("countwishlist")
   return (
     <>
       {/* 🔹 Top Bar */}
@@ -68,12 +74,13 @@ function Header() {
           {/* ✅ Icons */}
           <div className="flex items-center gap-4">
             {/* Wishlist */}
+            <a href="/Wishlist">
             <div className="relative text-gray-700 cursor-pointer hover:text-[#0AAD0A]">
               <FaHeart className="text-lg" />
               <span className="absolute -top-2 -right-2 bg-[#0AAD0A] text-white rounded-full text-xs px-1">
-                4
+                {numwishlist}
               </span>
-            </div>
+            </div></a>
 
             {/* User */}
             <div className="text-gray-700 hover:text-[#0AAD0A] cursor-pointer" >
@@ -82,11 +89,13 @@ function Header() {
 
             </div>
 
-            {/* Cart */}
+    
+           
             <div className="relative text-gray-700 cursor-pointer hover:text-[#0AAD0A]">
-              <FaBagShopping className="text-lg" />
+             <a href="/cartslider"><FaBagShopping className="text-lg"  /></a> 
+   
               <span className="absolute -top-2 -right-2 bg-[#0AAD0A] text-white rounded-full text-xs px-1">
-                5
+                5 
               </span>
             </div>
           </div>
