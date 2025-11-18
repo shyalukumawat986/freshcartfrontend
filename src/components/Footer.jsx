@@ -4,43 +4,46 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200 text-sm text-gray-600 font-medium">
+      
       {/* ====== TOP LINKS ====== */}
-      <div className="container max-w-7xl mx-auto  px-6 py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-12 
+                      grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+        
         {/* --- Categories --- */}
         <div>
           <h3 className="font-semibold text-gray-900 mb-3">Categories</h3>
           <ul className="space-y-2">
             <li className="hover:text-[#0AAD0A] cursor-pointer">Vegetables & Fruits</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Breakfast & instant food</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Breakfast & Instant Food</li>
             <li className="hover:text-[#0AAD0A] cursor-pointer">Bakery & Biscuits</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Atta, rice & dal</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Sauces & spreads</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Organic & gourmet</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Baby care</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Cleaning essentials</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Personal care</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Atta, Rice & Dal</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Sauces & Spreads</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Organic & Gourmet</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Baby Care</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Cleaning Essentials</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Personal Care</li>
           </ul>
         </div>
 
-        {/* --- Column 2 --- */}
+        {/* --- Column 2 (Merged for small screens) --- */}
         <div>
-          <h3 className="font-semibold text-gray-900 mb-3 invisible">.</h3>
+          <h3 className="font-semibold text-gray-900 mb-3">More Items</h3>
           <ul className="space-y-2">
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Dairy, bread & eggs</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Cold drinks & juices</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Tea, coffee & drinks</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Masala, oil & more</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Chicken, meat & fish</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Paan corner</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Pharma & wellness</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Home & office</li>
-            <li className="hover:text-[#0AAD0A] cursor-pointer">Pet care</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Dairy, Bread & Eggs</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Cold Drinks & Juices</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Tea, Coffee & Drinks</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Masala, Oil & More</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Chicken, Meat & Fish</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Paan Corner</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Pharma & Wellness</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Home & Office</li>
+            <li className="hover:text-[#0AAD0A] cursor-pointer">Pet Care</li>
           </ul>
         </div>
 
-        {/* --- Get to know us --- */}
+        {/* --- Get to Know Us --- */}
         <div>
-          <h3 className="font-semibold text-gray-900 mb-3">Get to know us</h3>
+          <h3 className="font-semibold text-gray-900 mb-3">Get to Know Us</h3>
           <ul className="space-y-2">
             <li className="hover:text-[#0AAD0A] cursor-pointer">Company</li>
             <li className="hover:text-[#0AAD0A] cursor-pointer">About</li>
@@ -73,13 +76,16 @@ export default function Footer() {
             <li className="hover:text-[#0AAD0A] cursor-pointer">New Retailers</li>
           </ul>
         </div>
+
       </div>
 
       {/* ====== MIDDLE BAR ====== */}
       <div className="border-t border-gray-200">
-        <div className="container max-w-7xl mx-auto  flex flex-col md:flex-row justify-between items-center px-6 py-5 text-gray-700">
+        <div className="max-w-7xl mx-auto px-6 py-6
+                        flex flex-col gap-6 lg:flex-row justify-between items-center">
+
           {/* Payment Partners */}
-          <div className="flex items-center gap-4 flex-wrap">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
             <span className="font-semibold text-gray-900">Payment Partners</span>
             <img src="https://freshcart-next-js.vercel.app/images/payment/amazonpay.svg" className="h-5" />
             <img src="https://freshcart-next-js.vercel.app/images/payment/american-express.svg" className="h-5" />
@@ -89,7 +95,7 @@ export default function Footer() {
           </div>
 
           {/* App Badges */}
-          <div className="flex items-center gap-4 mt-4 md:mt-0">
+          <div className="flex items-center gap-4 justify-center">
             <span className="text-gray-900 font-medium">Get deliveries with FreshCart</span>
             <img
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
@@ -107,24 +113,26 @@ export default function Footer() {
 
       {/* ====== BOTTOM BAR ====== */}
       <div className="border-t border-gray-200">
-        <div className="container max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-4 text-gray-600 pb-25">
-          <p>
-            © 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved.{" "}
-            Powered by{" "}
+        <div className="max-w-7xl mx-auto px-6 py-4 
+                        flex flex-col md:flex-row justify-between items-center gap-4">
+
+          <p className="text-center md:text-left">
+            © 2022 - 2025 FreshCart eCommerce Template. Powered by{" "}
             <span className="text-[#0AAD0A] font-medium hover:underline cursor-pointer">
               Codescandy
             </span>.
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <span className="text-gray-800">Follow us on</span>
+          <div className="flex items-center gap-4">
+            <span className="text-gray-800">Follow us</span>
             <FaFacebookF className="text-gray-600 hover:text-[#0AAD0A] cursor-pointer transition" />
             <FaTwitter className="text-gray-600 hover:text-[#0AAD0A] cursor-pointer transition" />
             <FaInstagram className="text-gray-600 hover:text-[#0AAD0A] cursor-pointer transition" />
           </div>
         </div>
       </div>
+
     </footer>
   );
 }
