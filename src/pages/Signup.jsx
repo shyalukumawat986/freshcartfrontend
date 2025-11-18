@@ -20,19 +20,19 @@ function Signup() {
       return;
     }
 
-    try {
-      const res = await axios.post("https://freshcartbackend-lemon.vercel.app/signup", signup);
 
-      if (res.data.status) { // ✅ updated key name
-        alert("Signup successful!");
-        setSignup({ name: "", email: "", password: "" });
-      } else {
-        alert(res.data.message || "Signup failed!");
+
+
+     await axios.post("https://freshcartbackend-lemon.vercel.app/signup", signup).then((res)=>{
+      if(res.data.status){
+        alert("signup")
       }
-    } catch (err) {
-      console.error("❌ Error:", err);
-      alert("Error saving data! Check backend connection.");
-    }
+      else{
+        alert("failed to signup")
+      }
+     })
+
+    
   };
 
 
